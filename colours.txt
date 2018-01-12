@@ -1,0 +1,18 @@
+			.statistics li.style1 {
+				background-color: #78BFAD;
+			}
+
+			.statistics li.style2 {
+				background-color: #6EBBBF;
+			}
+
+			.statistics li.style3 {
+				background-color: #5BA6BF;
+			}
+
+			.statistics li.style4 {
+				background-color: #6190BF;
+			}
+
+			.statistics li.style5 {
+				background-color: #6C7EB2;
