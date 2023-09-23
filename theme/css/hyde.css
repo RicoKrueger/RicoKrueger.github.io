@@ -54,13 +54,13 @@ html {
  *
  * Flexible banner for housing site name, intro, and "footer" content. Starts
  * out above content in mobile and later moves to the side with wider viewports.
- */
+ */ 
 
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background-color: #202020;
+  background-color: #202020; 
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -192,6 +192,15 @@ html {
  */
 
 /* Base16 (http://chriskempson.github.io/base16/#default) */
+
+/* Own blue */
+.theme-base-07 .sidebar {
+  background-color: #1c03f5;
+}
+.theme-base-07 .content a,
+.theme-base-07 .related-posts li a:hover {
+  color: #1c03f5;
+}
 
 /* Red */
 .theme-base-08 .sidebar {

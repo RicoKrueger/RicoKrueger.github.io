@@ -219,13 +219,13 @@ a.sidebar-social-item.active:focus {
 
 /* Base16 (http://chriskempson.github.io/base16/#default) */
 
-/* Electric blue */
+/* Own red */
 .theme-base-00 .sidebar {
-  background-image: linear-gradient(0deg, #78BFAD, #5BA6BF, #6C7EB2);
+  background-color: #ac4142;
 }
 .theme-base-00 .content a,
 .theme-base-00 .related-posts li a:hover {
-  color: #bf8578;
+  color: #ac4142;
 }
 
 /* Red */
