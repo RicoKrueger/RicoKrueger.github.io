@@ -1,0 +1,137 @@
+/* ── Design tokens ─────────────────────────────────────────────────────────── */
+:root {
+  --sidebar-bg:    #1e2d3d;
+  --sidebar-text:  #cbd5e1;
+  --accent:        #0ea5e9;
+  --link:          #0284c7;
+  --link-hover:    #0369a1;
+  --body-text:     #374151;
+  --heading:       #111827;
+}
+
+/* ── Base typography ───────────────────────────────────────────────────────── */
+html {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  color: var(--body-text);
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+a:hover,
+a:focus {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* ── Sidebar ───────────────────────────────────────────────────────────────── */
+.sidebar {
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+}
+
+/* Override theme-base-07 with the slate colour */
+.theme-base-07 .sidebar {
+  background-color: var(--sidebar-bg);
+}
+
+.sidebar a {
+  color: #fff;
+  transition: color 0.2s ease;
+}
+.sidebar a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Profile image */
+.sidebar-about .profile-picture {
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  max-width: 8rem;
+}
+
+.sidebar-about h1 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.sidebar-about .lead {
+  color: var(--sidebar-text);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+/* Nav links */
+.sidebar-nav {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+.sidebar-nav li a {
+  display: block;
+  padding: 0.22rem 0;
+  color: var(--sidebar-text);
+  transition: color 0.2s ease, padding-left 0.15s ease;
+  font-size: 0.9rem;
+}
+.sidebar-nav li a:hover {
+  color: #fff;
+  padding-left: 0.35rem;
+}
+
+/* Social links */
+.sidebar-social p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0;
+}
+.sidebar-social a {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--sidebar-text);
+  font-size: 0.82rem;
+}
+.sidebar-social a:hover {
+  color: #fff;
+}
+.sidebar-social br {
+  display: none;
+}
+
+/* ── Content area link colour (override theme-base-07) ─────────────────────── */
+.theme-base-07 .content a,
+.theme-base-07 .related-posts li a:hover {
+  color: var(--link);
+}
+
+/* ── Publications list ─────────────────────────────────────────────────────── */
+.pub-list {
+  padding-left: 1.8rem;
+}
+.pub-list li {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #f0f4f8;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  color: var(--body-text);
+}
+.pub-list li:last-child {
+  border-bottom: none;
+}

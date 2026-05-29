@@ -24,18 +24,11 @@
  * Themes
  */
 
-@import url(font-awesome.min.css);
-@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
-
 /*
  * Global resets
  *
  * Update the foundational and global aspects of the page.
  */
-
-html {
-  font-family: "Source Sans Pro", "PT Sans", Helvetica, Arial, sans-serif;
-}
 
 @media (min-width: 48em) {
   html {

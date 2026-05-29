@@ -439,10 +439,10 @@ a.pagination-item:hover {
 @media (min-width: 30em) {
   .pagination {
     margin: 3rem 0;
+    display: flex;
   }
   .pagination-item {
-    float: left;
-    width: 50%;
+    flex: 1;
   }
   .pagination-item:first-child {
     margin-bottom: 0;
